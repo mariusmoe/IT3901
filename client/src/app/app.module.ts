@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatSidenavModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { BasicSettingsComponent } from './modules/user/basic-settings/basic-sett
 import { MainContentComponent } from './modules/main/main-content/main-content.component';
 import { MeasuresComponent } from './modules/main/measures/measures.component';
 import { HighscoresComponent } from './modules/main/highscores/highscores.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { HighscoresComponent } from './modules/main/highscores/highscores.compon
     BrowserAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatToolbarModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

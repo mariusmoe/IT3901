@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
-
+import {MatIconModule} from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { SidePanelComponent } from './modules/side-panel/side-panel.component';
@@ -30,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
